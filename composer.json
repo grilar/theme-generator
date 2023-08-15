@@ -1,0 +1,22 @@
+{
+    "name": "grilar/theme-generator",
+    "description": "Theme generator",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\ThemeGenerator\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev",
+        "grilar/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\ThemeGenerator\\Providers\\ThemeGeneratorServiceProvider"
+            ]
+        }
+    }
+}
